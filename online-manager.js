@@ -1,4 +1,8 @@
 // Online Multiplayer Manager
+if (typeof supabase === 'undefined') {
+    // Eğer supabase-config.js yüklenmediyse diye bir kontrol
+    console.error("Supabase henüz hazır değil! Sıralamayı kontrol et.");
+}
 class OnlineGameManager {
     constructor() {
         this.currentUser = null;
