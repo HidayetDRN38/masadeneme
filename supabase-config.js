@@ -1,7 +1,7 @@
 // Supabase Configuration
 const SUPABASE_URL = 'https://axhpyppiioqentbdygma.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF4aHB5cHBpaW9xZW50YmR5Z21hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIxMDY2MDksImV4cCI6MjA4NzY4MjYwOX0.6AWTH0Bs6jCqG66zp3cQ3E9mrw14PChlXsQ1BGCOULA'; 
-// Eski 4. satırı sil, bunu yapıştır:
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);// Eski 4. satırı sil, bunu yapıştır:
 
 }
 
