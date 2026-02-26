@@ -1,7 +1,10 @@
 // Online Multiplayer Manager
-if (typeof supabase === 'undefined') {
-    // Eğer supabase-config.js yüklenmediyse diye bir kontrol
-    console.error("Supabase henüz hazır değil! Sıralamayı kontrol et.");
+// Online Multiplayer Manager
+// Config dosyasından gelen gerçek bağlantıyı bu dosyanın içine alıyoruz
+const supabase = window.supabase;
+
+if (!supabase) {
+    console.error("Supabase bağlantısı kurulamadı! supabase-config.js dosyasını kontrol et.");
 }
 class OnlineGameManager {
     constructor() {
