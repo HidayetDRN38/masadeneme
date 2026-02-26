@@ -1016,14 +1016,3 @@ document.addEventListener('mousemove', (e) => {
 });
 
 // Gyroscope effect for mobile devices
-if (window.DeviceOrientationEvent) {
-    window.addEventListener('deviceorientation', (e) => {
-        const cards = document.querySelectorAll('.preserve-3d > div');
-        cards.forEach(card => {
-            const tiltX = e.gamma ? e.gamma / 3 : 0; // Left-right tilt
-            const tiltY = e.beta ? e.beta / 3 : 0;  // Front-back tilt
-            
-            card.style.transform = `perspective(1000px) rotateX(${-tiltY}deg) rotateY(${tiltX}deg)`;
-        });
-    });
-}
