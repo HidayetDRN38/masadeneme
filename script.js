@@ -1,5 +1,5 @@
 // Matematik Duello Game Script
-const supabase = window.supabase;
+
 
 class MathDuelGame {
     constructor() {
