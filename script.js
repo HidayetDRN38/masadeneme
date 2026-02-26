@@ -1,4 +1,6 @@
 // Matematik Duello Game Script
+const supabase = window.supabase;
+
 class MathDuelGame {
     constructor() {
         this.currentQuestion = 0;
@@ -996,9 +998,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Make game instance globally available for UI updates
     window.gameUI = game;
-    
-    // Remove demo simulation for online mode
-    // Real-time notifications will work through Supabase
 });
 
 // Add some interactive hover effects
